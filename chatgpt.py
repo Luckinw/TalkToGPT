@@ -17,7 +17,7 @@ def talkgpt(content):
 
     headers = {
         "Content-Type": "application/json",
-        "Authorization": f"Bearer {'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'}"
+        "Authorization": f"Bearer {'API KEY'}"
     }
 
     response = requests.post(url, headers=headers, json=payload, stream=False)

@@ -21,4 +21,4 @@ def talkgpt(content):
     }
 
     response = requests.post(url, headers=headers, json=payload, stream=False)
-    return response.json()['choices'][0]['message']['content']
+    return f"AI: {response.json()['choices'][0]['message']['content']}"
